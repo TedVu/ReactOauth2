@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 function App() {
   const [isSignedIn, setIsSignedIn] = useState(false);
 
+  // When first rendering checking if user is signed in
   useEffect(() => {
     window.gapi.load("client:auth2", () => {
       window.gapi.client.init({
